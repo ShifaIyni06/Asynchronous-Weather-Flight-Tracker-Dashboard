@@ -44,6 +44,7 @@ A sleek, responsive web dashboard that provides real-time local weather, air qua
 ├── index.html          # HTML structure and Leaflet CDN bindings
 ├── style.css           # Modern, responsive layout with CSS variables
 ├── script.js          # API calls, cache layer, map updates, and theme handler
+```
 
 🚀 Getting Started
 No server-side installation or build steps are required. You can run the dashboard directly in any browser.
