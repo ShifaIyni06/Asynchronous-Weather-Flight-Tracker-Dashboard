@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Weather & Flight Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body class="dark-theme">
+
+    <div class="container">
+        <header class="dashboard-header">
+            <div>
+                <h1>✈️ Real-Time Weather & Flight Dashboard</h1>
+                <p>Fetch concurrent weather conditions, air quality, and live flight tracking data instantly.</p>
+            </div>
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                <span id="theme-icon">🌙</span> <span id="theme-text">Dark Mode</span>
+            </button>
+        </header>
+
+        <!-- Search Controls -->
+        <section class="search-section">
+            <div class="input-group">
+                <label for="city-input">City Name</label>
+                <input type="text" id="city-input" placeholder="e.g. London, New York, Tokyo" value="London">
+            </div>
+            <button id="search-btn">Fetch Live Data</button>
+        </section>
+
+        <!-- Status Message -->
+        <div id="status-message" class="status-box"></div>
+
+        <!-- Dashboard Grid -->
+        <main class="dashboard-grid">
+            <!-- Weather Card -->
+            <div class="card" id="weather-card">
+                <h2>🌤️ Current Weather & Air Quality</h2>
+                <div id="weather-content">
+                    <p class="placeholder">Click "Fetch Live Data" to load weather status.</p>
+                </div>
+            </div>
+
+            <!-- Flight Data Card -->
+            <div class="card" id="flight-card">
+                <h2>✈️ Live Air Traffic Nearby</h2>
+                <div id="flight-content">
+                    <p class="placeholder">Click "Fetch Live Data" to load flight activity.</p>
+                </div>
+                <!-- Leaflet Map Container -->
+                <div id="map-container"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
