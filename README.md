@@ -46,14 +46,14 @@ A sleek, responsive web dashboard that provides real-time local weather, air qua
 ├── script.js          # API calls, cache layer, map updates, and theme handler
 ```
 
-###🚀 Getting Started
+🚀 Getting Started
 No server-side installation or build steps are required. You can run the dashboard directly in any browser.
 
-####1. Clone the repository
+##1. Clone the repository
 git clone [https://github.com/your-username/city-air-traffic-dashboard.git](https://github.com/your-username/city-air-traffic-dashboard.git)
 cd city-air-traffic-dashboard
 
-####2. Launch the Application
+##2. Launch the Application
 Simply open index.html in your web browser of choice, or use a local dev server like VS Code's Live Server extension:
 ```Bash
 # Using Python to start a quick local server
